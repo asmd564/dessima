@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "name": "Ноутбук",
+      "price": 15000,
+      "description": "Потужний ноутбук з великим дисплеєм та швидким процесором",
+      "image": "https://avatars.mds.yandex.net/get-mpic/4426104/img_id3438183130181838446.jpeg/orig"
+    },
+    {
+      "id": 2,
+      "name": "Смартфон",
+      "price": 8000,
+      "description": "Сучасний смартфон з великим екраном та високоякісною камерою",
+      "image": "https://avatars.mds.yandex.net/get-mpic/4426104/img_id3438183130181838446.jpeg/orig"
+    },
+    {
+      "id": 3,
+      "name": "Телевізор",
+      "price": 20000,
+      "description": "Великий телевізор з яскравим дисплеєм та кристальною чистотою зображення",
+      "image": "https://avatars.mds.yandex.net/get-mpic/4426104/img_id3438183130181838446.jpeg/orig"
+    },
+    {
+        "id": 4,
+        "name": "Телевізор",
+        "price": 20000,
+        "description": "Великий телевізор з яскравим дисплеєм та кристальною чистотою зображення",
+        "image": "https://avatars.mds.yandex.net/get-mpic/4426104/img_id3438183130181838446.jpeg/orig"
+      },
+      {
+        "id": 5,
+        "name": "Телевізор",
+        "price": 20000,
+        "description": "Великий телевізор з яскравим дисплеєм та кристальною чистотою зображення",
+        "image": "https://avatars.mds.yandex.net/get-mpic/4426104/img_id3438183130181838446.jpeg/orig"
+      },
+      {
+        "id": 6,
+        "name": "Хер",
+        "price": 20000,
+        "description": "Великий телевізор з яскравим дисплеєм та кристальною чистотою зображення",
+        "image": "https://avatars.mds.yandex.net/get-mpic/4426104/img_id3438183130181838446.jpeg/orig"
+      },
+      {
+        "id": 7,
+        "name": "Херня",
+        "price": 20000,
+        "description": "Великий телевізор з яскравим дисплеєм та кристальною чистотою зображення",
+        "image": "https://avatars.mds.yandex.net/get-mpic/4426104/img_id3438183130181838446.jpeg/orig"
+      }
+  ]

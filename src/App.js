@@ -1,16 +1,21 @@
+import { useState } from 'react';
 import './App.css';
-import { Header } from './components/header/header';
+import { CardList } from './components/cardlist';
+import cn from 'classnames';
+import MainScreen from './components/MainScreen/mainScreen';
 import { Footer } from './components/footer/footer';
-import { Strength } from './components/strength/strength';
+
+import products from './api/products.json';
+
+
 
 const App = () => {
   return (
-  <div className="App">
-    <Header/>
-    <Strength/>
-    <Footer/>
-  </div>
-);
+    <div ClassName="App">
+       <MainScreen/>
+      <Footer/>
+    </div>
+  )
 }
 
 export default App;

@@ -1,46 +1,66 @@
-import React from "react";
+import { useState } from "react";
+import ContactForm from "../ui/contactForm";
 
 export const Header = ()  => {
+    const [visible, setVisible] = useState(false);
+    const [active, setActive] = useState('');
+
+    const open = () => {
+      if(active === '' || active === null) {
+        setActive('active');
+      } else if(active === 'active') {
+        setActive('');
+      } 
+    };
+
+    const openModal = () => {
+      setVisible(true);
+    };
+
+    const closeModal = () => {
+      setVisible(false);
+    };
+
     return (
-        <header class="header">
-        <div class="header__wrapper" id="modal">
-          <div class="header__wrapper-navbar">
-            <nav class="navbar">
-              <ul class="nav">
-                <a href="index.html"><li class="nav__active">Home</li></a>
+        <header className="header">
+        <div className="header__wrapper" id="modal">
+          <div className="header__wrapper-navbar">
+            <nav className={`navbar ${active}`}>
+              <ul className="nav">
+                <a href="index.html"><li className="nav__active">Home</li></a>
                 <a href="projects.html"><li>Projects</li></a>
                 <a href="about.html"><li>About us</li></a>
                 <a href="contact.html"><li>Contacts</li></a>
-                <div class="mobile__button mobile">
-                  <a href="#modal">Make request</a>
+                <div className="mobile__button mobile">
+                  <button onClick={openModal}>Make request</button>
                 </div>
               </ul>
             </nav>
-            <div class="logo">
+            <div className="logo">
               <a href="index.html"></a>
             </div>
-            <div class="burger__wrapper">
-            <div class="header__burger">
+            <div className="burger__wrapper">
+              <div className={`header__burger ${active}`} onClick={open}>
             </div>
             </div>
     
-            <div class="button__wrapper">
-              <div class="language">
+            <div className="button__wrapper">
+              <div className="language">
                 <a href="">Pl</a>
                 <a href="">En</a>
               </div>
-              <div class="request__button">
-                <a href="#modal">Make request</a>
+              <div className="request__button">
+                <a href="#modal" onClick={openModal}>Make request</a>
               </div>
             </div>
           </div>
-          <div class="header__content">
+          <div className="header__content">
             <h1>DESSIMA</h1>
             <h2>Interior design studio</h2>
-            <a href="projects.html"><span class="header__content-span">&mdash;</span>View project<span class="header__content-span">&mdash;</span></a>
+            <a href="projects.html"><span className="header__content-span">&mdash;</span>View project<span className="header__content-span">&mdash;</span></a>
           </div>
     
-          <div class="header__social">
+          <div className="header__social">
             <a href="https://instagram.com/dessima_interior?igshid=YmMyMTA2M2Y=" target="_blank"></a>
             <a href="https://www.facebook.com/Dessima-Interior-106507372131775" target="_blank"></a>
             <a href="https://t.me/dessima" target="_blank"></a>
@@ -48,6 +68,9 @@ export const Header = ()  => {
           </div>
     
         </div>
+      {visible &&(
+        <ContactForm callback={closeModal}/>
+      )}
       </header>
-    )
+    );
 }
