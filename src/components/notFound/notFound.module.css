@@ -1,0 +1,21 @@
+.not__found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    max-width: 1140px;
+    height: 80vh;
+    margin: 0 auto;
+}
+
+.title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(-50%);
+    max-width: 1140px;
+    width: 100%;
+    text-align: center;
+}

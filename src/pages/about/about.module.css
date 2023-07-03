@@ -1,0 +1,202 @@
+.header__content{
+    background-image: url(../../img/backgroundsypialnia.png);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin-top: 30px;
+    height: 100vh;
+  }
+
+  .header__content_wrapper{
+    display: flex;
+    max-width: 863px;
+    margin: 0 auto;
+    color: white;
+    position: absolute;
+    top: 325px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .header__content_wrapper img{
+    box-sizing: border-box;
+    display: block;
+    padding: 0 30px;
+  }
+
+  .header__content_tittle{
+    max-width: 500px;
+  }
+
+  .header__content_tittle h1{
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    color: #F6F7F2;
+  }
+  
+  .header__content h2{
+    font-family: 'Cormorant', serif;
+    font-weight: 500;
+    color: rgba(216, 218, 209, 0.8);
+    font-size: 39px;
+    line-height: 43px;
+    padding-top: 10px;
+    padding-bottom: 31px;
+  }
+  
+  .header__content a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+  }
+  
+  body.lock {
+    overflow: hidden;
+  }
+  
+  .header__social{
+    display: block;
+    margin: 0;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    max-width: 156px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .description{
+    padding-top: 100px;
+    max-width: 846px;
+    margin: 0 auto;
+  }
+
+  .description__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 100px;
+  }
+
+  .description__tittle{
+    max-width: 326px;
+  }
+  
+  .description__tittle h2{
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 39px;
+    line-height: 43px;
+    padding-bottom: 15px;
+  }
+
+  .description__tittle p{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: #2B2A29;
+    padding-bottom: 25px;
+  }
+
+  .tittle__exp{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 277px;
+    justify-content: space-between;
+  }
+
+  .exp{
+    max-width: 103px;
+  }
+
+  .exp h2{
+    font-family: 'Cormorant';
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 48px;
+    color: #3A3E4B;
+  }
+
+  .exp p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #3A3E4B;
+  }
+
+  .howto__order{
+    padding-bottom: 63px;
+    background: #F2EAE4;
+    text-align: center;
+    padding-top: 61px;
+  }
+  .howto__order h2{
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 39px;
+    line-height: 43px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  .howto__order p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #2B2A29;
+    padding-top: 15px;
+  }
+
+
+  .howto_card img{
+    box-sizing: border-box;
+    display: block;
+  }
+
+  .howto_card{
+    display: flex;
+    flex-direction: column;
+    max-width: 240px;
+    width: 100%;
+    background: rgba(217, 217, 217, 0.18);
+    padding-bottom: 60px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .howto-card.big{
+    max-width: 326px;
+  }
+
+  .howto__card_wrapper{
+    display: flex;
+    max-width: 840px;
+    margin: 0 auto;
+    padding-top: 80px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  

@@ -1,0 +1,257 @@
+/* Home Header style */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+.logo{
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.header__wrapper_navbar{
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.navbar ul{
+  display: flex;
+}
+.navbar li{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  padding-left: 36px;
+  font-size: 16px;
+  color: black;
+}
+
+.navbar a{
+  text-decoration: none;
+}
+
+.button__wrapper{
+  display: flex;
+}
+.language{
+  padding-right: 15px;
+  display: none;
+}
+.mobile{
+  display: none;
+}
+.language a{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 13px;
+}
+.button__wrapper a{
+  text-decoration: none;
+}
+
+.request__button button{
+  background: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  box-sizing: border-box;
+  border: 1px solid #D8DAD1;
+  padding: 9px 30px;
+  border-radius: 3px;
+  color: #121111;
+  font-size: 14px;
+  margin-right: 36px;
+}
+
+.request__button button:hover{
+  background: #A07351;
+  color: white;
+  transition: 0.5s;
+}
+
+ .header__burger{
+   display: none;
+ }
+
+@media (min-width: 1200px) {
+
+}
+
+
+@media (max-width: 1199px) {
+  
+
+  
+}
+
+
+@media (max-width: 991px) {
+  body.lock {
+    overflow: hidden;
+  }
+
+  .header__wrapper_navbar{
+    justify-content: space-between;
+  }
+  .mobile__burger{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .mobile__button.mobile{
+    display: block;
+    position: relative;
+    top: 60px;
+    left: 20px;
+    z-index: 2;
+  }
+  .mobile__button a{
+    background: black;
+    border: 1px solid white;
+    padding: 10px 50px;
+  }
+  .logo{
+    position: absolute;
+    z-index: 2;
+
+  }
+
+  .button__wrapper{
+    display: none;
+  }
+
+  .burger__wrapper{
+    padding-right: 20px;
+  }
+
+  .header__burger {
+    margin-left: 10px;
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 20px;
+    }
+
+.header__burger:before,
+.header__burger:after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+}
+
+.header__burger:before {
+  top: 3px;
+}
+
+.header__burger:after {
+  bottom: 3px;
+}
+
+.header__burger {
+  z-index: 4;
+}
+
+.header__burger.active span {
+  transform: scale(0);
+}
+
+.header__burger.active:before {
+  transform: rotate(45deg);
+  top: 9px;
+  background: grey;
+}
+
+.header__burger.active:after {
+  transform: rotate(-45deg);
+  bottom: 9px;
+  background: grey;
+}
+
+
+.navbar.active {
+  top: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.navbar {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  opacity: 0, 9;
+  z-index: 2;
+  padding: 100px 0px 0px 0px;
+}
+
+.nav {
+  display: block;
+  flex-direction: column;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.nav li{
+  font-size: 22px;
+  text-align: center;
+  color: grey;
+  font-size: 39px;
+  padding-bottom: 20px;
+}
+}
+
+/* all pages */
+
+.header__wrapper_navbar.active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.header__wrapper_navbar.active > .navbar li{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.header__burger.home:before {
+    background-color: white;
+}
+
+.header__burger.home:after {
+    background-color: white;
+ 
+}
+
+.request__button.home button{
+    background: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    box-sizing: border-box;
+    border: 1px solid #D8DAD1;
+    padding: 9px 30px;
+    border-radius: 3px;
+    color: white;
+    font-size: 14px;
+    margin-right: 36px;
+  }
+  
+  .request__button.home button:hover{
+    background: white;
+    color: black;
+    transition: 0.5s;
+  } 

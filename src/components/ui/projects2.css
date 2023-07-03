@@ -78,7 +78,6 @@ select {
 
 .header{
   margin: 0 auto;
-  background-image: url(../src/img/1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -110,6 +109,11 @@ nav li.nav__active{
 }
 
 .header__wrapper-navbar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
   padding-top: 16px;
   display: flex;
   justify-content: space-between;
@@ -151,8 +155,7 @@ nav li.nav__active{
   text-decoration: none;
 }
 
-.request__button button{
-  background-color: transparent;
+.request__button a{
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   box-sizing: border-box;
@@ -161,11 +164,6 @@ nav li.nav__active{
   border-radius: 3px;
   color: white;
   font-size: 14px;
-  cursor: pointer;
-}
-
-.request__button button:focus {
-  background-color: #A07351;
 }
 
 .mobile__button a{
@@ -194,7 +192,7 @@ nav li.nav__active{
   padding-left: 10px;
 }
 
-.request__button button:hover{
+.request__button a:hover{
   background: white;
   color: black;
   transition: 0.5s;
@@ -409,7 +407,7 @@ body.lock {
   max-width: 369px;
 }
 
-.contact__button button{
+.contact__button a{
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   box-sizing: border-box;
@@ -421,12 +419,10 @@ body.lock {
   font-size: 14px;
   width: 160px;
   height: 47px;
-  border: 1px solid #A07351;
-  cursor: pointer;
 }
 
-.contact__button button:hover{
-  border-color: black;
+.contact__button a:hover{
+  border: 1px solid black;
   color: black;
   transition: 0.3s;
   background: none;
@@ -441,7 +437,6 @@ body.lock {
   font-size: 16px;
 }
 .footer{
-  flex: 0 0 auto;
   background: #2B2A29;
   text-align: center;
 
@@ -487,6 +482,10 @@ body.lock {
    color: white;
    font-size: 10px;
    padding-bottom: 60px;
+ }
+
+ .footer a{
+  text-decoration: none;
  }
  .header__burger{
    display: none;
@@ -558,25 +557,24 @@ body.lock {
    padding-top: 76px;
  }
 
-.modal.active {
+.modal.active{
   display: block;
   transition: 0.5s;
 }
-.close {
-  background-image: url(./img/close.png);
-  background-position: center;
+.close{
+  background-image: url(../../img/close.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: transparent;
-  position: absolute;
+  background-position: center;
   width: 20px;
   height: 20px;
-  top: 20px;
-  right: 20px;
+  z-index: 100;
+  position: absolute;
+  top: 15px;
+  right: 15px;
   border: none;
   cursor: pointer;
   font-size: 20px;
-  z-index: 100;
 }
 
 
@@ -639,7 +637,7 @@ body.lock {
     width: 100%;
   }
 
-  /* РІСЂРµРјРµРЅРЅРѕРµ РѕС‚РєР»СЋС‡РµРЅРёРµ instagram*/
+  /* временное отключение instagram*/
   .second{
     display: none;
   }
@@ -809,7 +807,7 @@ body.lock {
     max-width: 282px;
   }
 
-  .contact__button button{
+  .contact__button a{
     padding: 10px 92.5px;
     margin-top: 30px;
   }
@@ -830,10 +828,3 @@ body.lock {
   }
 }
 
-.error {
-  height: 65vh;
-}
-
-@media (max-width: 480px) {
-  
-}

@@ -3,20 +3,20 @@ import React from "react";
 const ContactForm = (props) => {
     return(
         <div className={`modal active`}>
-            <div className="modal__wrapper">
-                <button type="button" name="button" className="close" onClick={props.callback}>X</button>
+            <form className="modal__wrapper" method="POST">
+                <button type="button" name="button" className="close" onClick={props.callback}></button>
                     <h1>MAKE REQUEST</h1>
                     <div className="modal__form">
                     <h2>Full name</h2>
-                    <input type="text" name="" value=""></input>
+                    <input type="text" required></input>
                 <h2>Email</h2>
-                <input type="text"></input>
+                <input type="email" required></input>
                 <h2>Contact number</h2>
-                <input type="text"></input>
-                <button type="button" name="button" >Send</button>
+                <input type="tel" required></input>
+                <button type="submit" name="button" >Send</button>
             </div>
 
-          </div>
+          </form>
     </div>
     )
 }

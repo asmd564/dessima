@@ -1,15 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
     return (
       <footer class="footer">
         <div class="footer__wrapper">
         <ul>
-            <a href=""><li>Home</li></a>
-            <a href=""><li>Projects</li></a>
-            <a href=""><li>About our style</li></a>
-            <a href=""><li>About our studio</li></a>
-            <a href=""><li>Contacts</li></a>
+            <Link to="/"><li>Home</li></Link>
+            <Link to="/projects"><li>Projects</li></Link>
+            <Link to="/about/style"><li>About our style</li></Link>
+            <Link to="/about"><li>About our studio</li></Link>
+            <Link to="/contact"><li>Contacts</li></Link>
             <a href=""><li>Send request</li></a>
         </ul>
         </div>

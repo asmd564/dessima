@@ -1,5 +1,11 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import logo from "../../img/logo.png";
 import ContactForm from "../ui/contactForm";
+import instagram from "../../img/Instagram.png";
+import facebook from "../../img/facebook.png";
+import whatsapp from "../../img/whatsup.png";
+import telegram from "../../img/telegram.png";
 
 export const Header = ()  => {
     const [visible, setVisible] = useState(false);
@@ -23,54 +29,19 @@ export const Header = ()  => {
 
     return (
         <header className="header">
-        <div className="header__wrapper" id="modal">
-          <div className="header__wrapper-navbar">
-            <nav className={`navbar ${active}`}>
-              <ul className="nav">
-                <a href="index.html"><li className="nav__active">Home</li></a>
-                <a href="projects.html"><li>Projects</li></a>
-                <a href="about.html"><li>About us</li></a>
-                <a href="contact.html"><li>Contacts</li></a>
-                <div className="mobile__button mobile">
-                  <button onClick={openModal}>Make request</button>
-                </div>
-              </ul>
-            </nav>
-            <div className="logo">
-              <a href="index.html"></a>
-            </div>
-            <div className="burger__wrapper">
-              <div className={`header__burger ${active}`} onClick={open}>
-            </div>
-            </div>
-    
-            <div className="button__wrapper">
-              <div className="language">
-                <a href="">Pl</a>
-                <a href="">En</a>
-              </div>
-              <div className="request__button">
-                <a href="#modal" onClick={openModal}>Make request</a>
-              </div>
-            </div>
-          </div>
+        <div className="header__wrapper">
           <div className="header__content">
             <h1>DESSIMA</h1>
             <h2>Interior design studio</h2>
-            <a href="projects.html"><span className="header__content-span">&mdash;</span>View project<span className="header__content-span">&mdash;</span></a>
+            <Link to="/projects"><span className="header__content-span">&mdash;</span>View project<span className="header__content-span">&mdash;</span></Link>
           </div>
-    
+      </div>
           <div className="header__social">
-            <a href="https://instagram.com/dessima_interior?igshid=YmMyMTA2M2Y=" target="_blank"></a>
-            <a href="https://www.facebook.com/Dessima-Interior-106507372131775" target="_blank"></a>
-            <a href="https://t.me/dessima" target="_blank"></a>
-            <a href="https://wa.me/48784665862" target="_blank"></a>
+            <a href="https://instagram.com/dessima_interior?igshid=YmMyMTA2M2Y=" target="_blank"><img src={instagram} alt="instagram"></img></a>
+            <a href="https://www.facebook.com/Dessima-Interior-106507372131775" target="_blank"><img src={facebook} alt="facebook"></img></a>
+            <a href="https://t.me/dessima" target="_blank"><img src={telegram} alt="telegram"></img></a>
+            <a href="https://wa.me/48784665862" target="_blank"><img src={whatsapp} alt="whatsapp"></img></a>
           </div>
-    
-        </div>
-      {visible &&(
-        <ContactForm callback={closeModal}/>
-      )}
       </header>
     );
 }

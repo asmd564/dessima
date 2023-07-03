@@ -1,6 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
+import { Contacts } from "../contacts/contacts";
+import { Link } from "react-router-dom";
 
 export const Strength = () => {
+
     return (
         <section class="strength">
             <div class="strength__wrapper">
@@ -8,7 +11,7 @@ export const Strength = () => {
                 <h4>STRENGTHS</h4>
                 <h2>WE DESIGN EVERY PROJECT AS A ONE-OFF</h2>
                 <p>We are able to satisfy the taste of the most demanding client. We take care about all the technical and bureaucratic worries. We offer the best planning options. We select all materials and order decorations. You enjoy your perfect place.</p>
-                <a href="#" class="str__btn">Projects</a>
+                <Link to="projects" class="str__btn">Projects</Link>
             </div>
             <div class="strength__img">
                 <img src="img/kuchnia.png" alt="image"></img>
@@ -24,7 +27,7 @@ export const Strength = () => {
             <h4>Our process</h4>
             <h2>WE MAKE IT SIMPLE</h2>
             <p>We want you to feel amazing at home. In other words, our aim is to create an interior design that enhances your rooms and your lifestyle. With our interior design process we make sure that everything is easy and enjoyable for you. </p>
-            <a href="#" class="str__btn">Our studio</a>
+            <Link to="our-studio" class="str__btn">Our studio</Link>
           </div>
     
         </div>
@@ -35,7 +38,7 @@ export const Strength = () => {
             <h4>SERVICE</h4>
             <h2>MORE THEN JUST DESIGN</h2>
             <p>Our services are always flexible and we adapt to our clients needs and budget. Let us help you with your project and save time and money with our design services and discounts.</p>
-            <a href="#contact" class="str__btn">Contact</a>
+            <Link to="contact" class="str__btn">Contact</Link>
           </div>
           <div class="strength__img">
             <img src="img/lazienka6.png" alt="image"></img>
@@ -61,26 +64,7 @@ export const Strength = () => {
             <a href="https://instagram.com/dessima_interior?igshid=YmMyMTA2M2Y=" target="_blank">Find more</a>
           </div>
         </div>
-          <div class="intouch__wrapper" id="contact">
-            <h2>Get in touch!</h2>
-            <div class="paragraph__wrapper">
-                <p>Think we could help you with your project or space? We’d love to get to know you a little better – drop us a line or give us a call.</p>
-            </div>
-    
-            <div class="contact__wrapper">
-              <p>+48 784 665 862</p>
-              <p>dessima.interior@gmail.com</p>
-              <div class="social__wrapper">
-                <a href=""><img src="img/Facebook2.png" alt="facebook"></img></a>
-                <a href=""><img src="img/Telegram2.png" alt="telegram"></img></a>
-                <a href=""><img src="img/Instagram2.png" alt="instagram"></img></a>
-                <a href=""><img src="img/WhatsApp2.png" alt="whatsapp"></img></a>
-              </div>
-            </div>
-            <div class="contact__button">
-              <a class="c__btn" href="#modal">Send request</a>
-            </div>
-          </div>
+        <Contacts/>
     
     
       </section>
