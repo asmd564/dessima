@@ -32,6 +32,12 @@
     padding: 10px 30px;
     border-radius: 3px;
   }
+
+  @media(max-width: 481px) {
+    .selector{
+      padding: 5px 10px;
+    }
+  }
  .project__card{
     text-align: center;
     padding-bottom: 40px;

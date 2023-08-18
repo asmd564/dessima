@@ -8,6 +8,12 @@
     height: 100vh;
   }
 
+  @media(max-width: 430px) {
+    .header__content {
+      min-height: 600px;
+    }
+  }
+
   .header__content_wrapper{
     display: flex;
     max-width: 863px;
@@ -90,6 +96,15 @@
     align-items: center;
     justify-content: space-between;
     padding-bottom: 100px;
+  }
+
+  @media(max-width: 860px) {
+    .description__wrapper {
+      flex-direction: column;
+    }
+    .description__wrapper.desc__rev {
+      flex-direction: column-reverse;
+    }
   }
 
   .description__tittle{
@@ -197,6 +212,23 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+  }
+
+  @media(max-width: 729px){
+    .howto__card_wrapper{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      padding-top: 0;
+    }
+
+    .howto_card {
+      margin-bottom: 10px;
+    }
+
+    .howto__card_wrapper:not(:last-child) {
+      padding-top: 80px;
+    }
   }
 
   

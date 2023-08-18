@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactForm = (props) => {
     return(
-        <div className={`modal active`}>
+        <div className={`modal ${props.active}`}>
             <form className="modal__wrapper" method="POST">
                 <button type="button" name="button" className="close" onClick={props.callback}></button>
                     <h1>MAKE REQUEST</h1>

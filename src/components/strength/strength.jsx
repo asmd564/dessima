@@ -1,70 +1,78 @@
 import React, {useState} from "react";
 import { Contacts } from "../contacts/contacts";
 import { Link } from "react-router-dom";
+import jadalnia from "../../img/jadalnia1.png";
+import kuchnia from "../../img/kuchnia.png";
+import lazienka from "../../img/lazienka2.png";
+import lazienka6 from "../../img/lazienka6.png";
+import sypialnia from "../../img/sypialnia1.png";
+import hol from "../../img/hol1.png";
 
-export const Strength = () => {
+export const Strength = (props) => {
 
     return (
-        <section class="strength">
-            <div class="strength__wrapper">
-            <div class="strength__description">
-                <h4>STRENGTHS</h4>
-                <h2>WE DESIGN EVERY PROJECT AS A ONE-OFF</h2>
-                <p>We are able to satisfy the taste of the most demanding client. We take care about all the technical and bureaucratic worries. We offer the best planning options. We select all materials and order decorations. You enjoy your perfect place.</p>
-                <Link to="projects" class="str__btn">Projects</Link>
+        <section className="strength">
+            <div className="strength__wrapper">
+            <div className="strength__description">
+                <h4>SILNE STRONY</h4>
+                <h2 className="strength__title">KAŻDY PROJEKT OPRACOWUJEMY INDYWIDUALNIE.</h2>
+                <p>Jesteśmy w stanie usatysfakcjonować gust najbardziej wymagającego klienta. Unikalne i rzetelne podejście do każdego projektu, doświadczenie we współpracy z klientem, artystyczny gust i harmonia łączenia pomysłów. My dobierzemy wszystkie materiały, meble, dekoracje. A Ty będziesz mogł/mogła cieszyć się swoim idealnym miejscem.</p>
+                <Link to="projects" className="str__btn">Projekty</Link>
             </div>
-            <div class="strength__img">
-                <img src="img/kuchnia.png" alt="image"></img>
+            <div className="strength__img">
+                <img src={kuchnia} alt="image"></img>
             </div>
             </div>
     
-        <div class="process__wrapper-main">
-        <div class="process__wrapper">
-          <div class="strength__img">
-            <img src="img/lazienka2.png" alt="image"></img>
+        <div className="process__wrapper-main">
+        <div className="process__wrapper">
+          <div className="strength__img">
+            <img src={lazienka} alt="image"></img>
           </div>
-          <div class="strength__description">
-            <h4>Our process</h4>
-            <h2>WE MAKE IT SIMPLE</h2>
-            <p>We want you to feel amazing at home. In other words, our aim is to create an interior design that enhances your rooms and your lifestyle. With our interior design process we make sure that everything is easy and enjoyable for you. </p>
-            <Link to="our-studio" class="str__btn">Our studio</Link>
+          <div className="strength__description">
+            <h4>Nasz proces</h4>
+            <h2 className="strength__title">Twój projekt jest Prosty.</h2>
+            <p>Naszym celem jest tworzenie wnętrz, które współgrają z Twoim stylem życia. Chcemy, abyś czuł się świetnie w swojej przestrzeni. Stworzymy dla Ciebie funkcjonalnie prosty, wygodny, przyjemny i ciekawy projekt wnętrza.</p>
+            <Link to="/about" className="str__btn">Nasze studio</Link>
           </div>
     
         </div>
         </div>
     
-        <div class="strength__wrapper">
-          <div class="strength__description">
-            <h4>SERVICE</h4>
-            <h2>MORE THEN JUST DESIGN</h2>
-            <p>Our services are always flexible and we adapt to our clients needs and budget. Let us help you with your project and save time and money with our design services and discounts.</p>
-            <Link to="contact" class="str__btn">Contact</Link>
+        <div className="strength__wrapper">
+          <div className="strength__description">
+            <h4>USŁUGA</h4>
+            <h2 className="strength__title">Stwórzmy razem idealną przestrzeń</h2>
+            <p>Nasze usługi są zawsze elastyczne. Dostosowujemy się do potrzeb i budżetu naszych klientów. 
+Chętnie pomożemy w Twoim projekcie, to jest świetna możliwość  zaoszczędzić swój czas i pieniądze dzięki naszym usługom projektowym i rabatom z których możesz skorzystać, dzieńki współpacy z nami.</p>
+            <Link to="contact" className="str__btn">Kontakt</Link>
           </div>
-          <div class="strength__img">
-            <img src="img/lazienka6.png" alt="image"></img>
+          <div className="strength__img">
+            <img src={lazienka6} alt="image"></img>
           </div>
         </div>
     
-        <div class="process__wrapper-main">
-          <div class="instagram__wrapper">
+        <div className="process__wrapper-main">
+          <div className="instagram__wrapper">
            <h2>INSTAGRAM</h2>
-           <p>We believe that knowledge is a gift. Each of us develops constantly and shares knowledge with the team. We help each other to find the seem the best.</p>
+           <p>Obserwej nas, aby pozostać w kontakcie, 
+być pierwszym, który zobaczy najnowsze projekty wnętrz i ich realizację</p>
           </div>
-          <div class="instagram__img">
-            <a href="#" class="first"><img src="img/jadalnia1.png" alt="jadalnia"></img></a>
-            <a href="#" class="second"><img src="img/sypialnia1.png" alt="sypialnia"></img></a>
-            <a href="#" class="third"><img src="img/hol1.png" alt="hol"></img></a>
+          <div className="instagram__img">
+            <a href="https://instagram.com/dessima_interior?igshid=YmMyMTA2M2Y=" className="first"><img src={jadalnia} alt="jadalnia"></img></a>
+            <a href="https://instagram.com/dessima_interior?igshid=YmMyMTA2M2Y=" className="second"><img src={sypialnia} alt="sypialnia"></img></a>
+            <a href="https://instagram.com/dessima_interior?igshid=YmMyMTA2M2Y=" className="third"><img src={hol} alt="hol"></img></a>
           </div>
-          <div class="dots__wrapper">
-            <div class="dot active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
+          <div className="dots__wrapper">
+            <div className="dot active"></div>
+            <div className="dot"></div>
+            <div className="dot"></div>
           </div>
-          <div class="subscribe__button">
-            <a href="https://instagram.com/dessima_interior?igshid=YmMyMTA2M2Y=" target="_blank">Find more</a>
+          <div className="subscribe__button">
+            <a href="https://instagram.com/dessima_interior?igshid=YmMyMTA2M2Y=" target="_blank">Więcej zdjęć</a>
           </div>
         </div>
-        <Contacts/>
+        <Contacts callback={props.callback}/>
     
     
       </section>

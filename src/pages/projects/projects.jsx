@@ -6,7 +6,7 @@ import { Contacts } from "../../components/contacts/contacts";
 import { useEffect } from "react";
 
 
-export const Projects = () => {
+export const Projects = (props) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -37,7 +37,7 @@ export const Projects = () => {
             <p>Krakow</p>
         </div>
     </section>
-    <Contacts/>
+    <Contacts callback={props.callback}/>
     </>
   )
 }

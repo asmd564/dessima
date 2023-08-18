@@ -1,28 +1,34 @@
+import { useEffect } from 'react';
 import facebook from '../../img/Facebook2.png';
 import telegram from '../../img/Telegram2.png';
 import instagram from '../../img/Instagram2.png';
 import whatsapp from '../../img/WhatsApp2.png';
 
 export const Contacts = (props) => {
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
     return (
-        <div class="intouch__wrapper">
-            <h2>Get in touch!</h2>
-            <div class="paragraph__wrapper">
-                <p>Think we could help you with your project or space? We’d love to get to know you a little better – drop us a line or give us a call.</p>
+        <div className="intouch__wrapper">
+            <h2 className='strength__title'>Skontaktuj się!</h2>
+            <div className="paragraph__wrapper">
+                <p>Myślisz, że moglibyśmy Ci pomóc z projektem Twojej przestrzeni? Chcielibyśmy poznać Cię trochę lepiej – napisz do nas lub zadzwoń.</p>
             </div>
 
-            <div class="contact__wrapper">
+            <div className="contact__wrapper">
                 <p>+48 784 665 862</p>
                 <p>dessima.interior@gmail.com</p>
-                <div class="social__wrapper">
-                    <a href=""><img src={facebook} alt="facebook" /></a>
-                    <a href=""><img src={telegram} alt="telegram" /></a>
-                    <a href=""><img src={instagram} alt="instagram" /></a>
-                    <a href=""><img src={whatsapp} alt="whatsapp" /></a>
+                <div className="social__wrapper">
+                    <a href="https://www.facebook.com/Dessima-Interior-106507372131775"><img src={facebook} alt="facebook" /></a>
+                    <a href="https://t.me/dessima"><img src={telegram} alt="telegram" /></a>
+                    <a href="https://instagram.com/dessima_interior?igshid=YmMyMTA2M2Y="><img src={instagram} alt="instagram" /></a>
+                    <a href="https://wa.me/48784665862"><img src={whatsapp} alt="whatsapp" /></a>
                 </div>
             </div>
-            <div class="contact__button">
-                <button class="c__btn" onClick={props.callback}>Send request</button>
+            <div className="contact__button">
+                <button className="c__btn" onClick={props.callback}>Wyślij wiadomość</button>
             </div>
         </div>
     );

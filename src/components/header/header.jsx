@@ -33,7 +33,7 @@ export const Header = ()  => {
           <div className="header__content">
             <h1>DESSIMA</h1>
             <h2>Interior design studio</h2>
-            <Link to="/projects"><span className="header__content-span">&mdash;</span>View project<span className="header__content-span">&mdash;</span></Link>
+            <Link to="/projects"><span className="header__content-span">&mdash;</span>Zobacz projekty<span className="header__content-span">&mdash;</span></Link>
           </div>
       </div>
           <div className="header__social">
